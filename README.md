@@ -9,6 +9,9 @@
 
 ---
 
+# 🌐  Acesso o projeto
+👉 **[Aprenser.github.io](https://leomelo23.github.io/Aprenser/)**
+
 ## 📋 Sobre o projeto
 
 O **Aprenser** é um exercício prático do curso de HTML e CSS da Udemy. O projeto simula a landing page de uma escola online com foco em cursos de programação, aplicando conceitos de estruturação semântica, estilização e layout responsivo.
