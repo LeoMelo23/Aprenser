@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-size: 62.5%;
+    --corPrincipal: #FEFF64;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cabecalho{
+    background-color:#2A2A2A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem 8rem;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    font-size: 1.6rem;
+    gap: 15px;
+    font-weight: bold;
+}
+#menu a{
+    text-decoration: none;
+    color: var(--corPrincipal);
+    outline: 1px solid  var(--corPrincipal);
+    padding: 1.2rem;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+}
+#menu a:hover{
+    outline: 1px solid black;
+    background-color:var(--corPrincipal);
+    color:black;
+}
+.tela_inicial{
+    background-image: linear-gradient(to top, var(--corPrincipal), white);
+   display: flex;
+   justify-content: center;
+  
+}
+.pagina_inicial{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.texto_inicio{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    width: 20%;
+    letter-spacing: 1px;
+    padding: 3rem;
+}
+.texto_inicio a{
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+    background-color:#FFD000;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: all 0.5s ease-in-out;
+}
+.texto_inicio a:hover{
+    background-color: #f4ae2d;
+}
+.texto_inicio p{
+    margin-top: 5rem;
+}
+
+#cursos,#contatos{
+    text-align: center;
+    margin: 5rem;
+}
+h2{
+    font-size: 3rem;
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 4rem;
+}
+.container_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.cards_cursos{
+    flex-basis: 40rem;
+    min-height: 50rem;
+    border: 1px solid  rgba(0, 0, 0, 0.107);
+     border-radius: 10px;
+     transition: all 0.7s ease-in-out;
+     cursor: pointer;
+}
+.cards_cursos:hover{
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 0 5px black;
+}
+.img_cards img{
+    width: 100%;
+}
+.txt_cards{
+    font-size: 2rem;
+    text-align: left;
+    padding: 2rem;
+    line-height: 1.5;
+}
+.txt_cards h3{
+    margin-bottom: 2rem;
+}
+#cursos a{
+    padding: 2rem;
+    background-color:#FFD000;
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.7s ease-in-out;
+}
+#cursos a:hover{
+     background-color: #f4ae2d;
+}
+.btn-vermais{
+margin-top: 5rem;
+}
+.pagina3{
+   background-color:#003463;
+   display: flex;
+   justify-content: center;
+   padding-top: 3rem;
+}
+.txt_pg3{
+    color: white;
+    font-size: 2rem;
+    width: 50%;
+    padding: 5rem;
+    line-height: 1.5;
+}
+.txt_pg3 h3{
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+.txt_pg4{
+    text-align: right;
+    font-size: 2rem;
+    margin: 4rem 0;
+    line-height: 1.5;
+}
+.img_map img{
+    width: 100%;  
+}
+footer{
+    background-color:#2A2A2A;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    font-size: 1.5rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #FEFF64;
+}
+@media(max-width:1024px){
+    #cabecalho{
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 30px;
+        white-space: nowrap;
+    }
+    .pagina_inicial{
+        flex-flow: column-reverse wrap;
+        margin-top: 2rem;
+    }
+    .texto_inicio{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .container_cards{
+        flex-flow: column nowrap;
+    }
+    .pagina3{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .txt_pg3{
+        width: 100%;
+    }
+    img{
+        max-width:80vw;
+    }
+}
