@@ -131,7 +131,7 @@ h2{
 .btn-vermais{
 margin-top: 5rem;
 }
-.pagina3{
+#nossa_escola{
    background-color:#003463;
    display: flex;
    justify-content: center;
@@ -193,7 +193,7 @@ footer a:hover{
     .container_cards{
         flex-flow: column nowrap;
     }
-    .pagina3{
+    #nossa_escola{
         flex-flow: column nowrap;
         align-items: center;
     }
