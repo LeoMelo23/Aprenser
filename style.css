@@ -75,6 +75,9 @@ body{
 .texto_inicio p{
     margin-top: 5rem;
 }
+.upper{
+    text-transform: uppercase;
+}
 
 #cursos,#contatos{
     text-align: center;
